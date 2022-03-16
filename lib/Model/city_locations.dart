@@ -1,4 +1,4 @@
-class CityLocations{
+class CityLocations {
   String name;
   String city;
   String ImageUrl;

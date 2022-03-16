@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tourguide/Model/city.dart';
 import 'package:tourguide/cairo.dart';
 
 class SideMenu extends StatelessWidget {
+  const SideMenu({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -12,7 +13,7 @@ class SideMenu extends StatelessWidget {
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
-            UserAccountsDrawerHeader(
+            const UserAccountsDrawerHeader(
               accountName: Text(''),
               accountEmail: Text(''),
               decoration: BoxDecoration(
@@ -35,9 +36,9 @@ class SideMenu extends StatelessWidget {
               onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => Cairo(),
+                  builder: (context) => Cairo(),
+                ),
               ),
-            ),
             ),
             ListTile(
               leading: Icon(Icons.location_city),
